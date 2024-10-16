@@ -69,3 +69,56 @@
 // }
 
 //Big O = O(4 + 5n)
+
+
+//Rule 1: Worst Case
+// const nemo = ["nemo"];
+// const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank'];
+// const large = new Array(100).fill('nemo');
+
+// function findNemo(array){
+//   let t0  = performance.now();
+//   for(let i = 0; i < array.length; i++){
+//     console.log('running');
+//     if (array[i] === 'nemo'){
+//       console.log('found NEMO');
+//       break;
+//     }
+//   }
+//   let t1 = performance.now();
+//   console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds')
+// }
+// findNemo(everyone);
+
+
+//Rule 2: Remove Constants
+// function printFirstItemThenFirstHalfThenSayHi100Times(items){
+//   console.log(items);
+
+//   const middleIndex = Math.floor(items.length / 2);
+//   const index = 0;
+
+//   while (index < middleIndex) {
+//     console.log(items[index]);
+//     index++;
+//   }
+
+//   for (const i = 0; i < 100; i++) {
+//     console.log('hi');
+//   }
+// }
+
+
+//Rule 3: Different Terms for Inputs
+//Trickiest parts of interview
+// O(m + n)
+
+// function compressBoxesTwice(boxes, boxes2){
+//   boxes.forEach(function(boxes){
+//     console.log(boxes);
+//   })
+
+//   boxes2.forEach(function(boxes){
+//     console.log(boxes);
+//   })
+// }
