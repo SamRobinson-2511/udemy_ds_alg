@@ -122,3 +122,19 @@
 //     console.log(boxes);
 //   })
 // }
+
+
+//Rule 3: Different Terms for Inputs
+//Log all pairs of an array (O(n^2))
+//Quadratic time: O(n^2)
+const boxes = [1, 2, 3, 4, 5];
+
+function logAllPairsOfArray(array){
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      console.log(array[i], array[j]);
+    }
+  }
+}
+
+logAllPairsOfArray(boxes);
