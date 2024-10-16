@@ -127,14 +127,35 @@
 //Rule 3: Different Terms for Inputs
 //Log all pairs of an array (O(n^2))
 //Quadratic time: O(n^2)
-const boxes = [1, 2, 3, 4, 5];
+// const boxes = [1, 2, 3, 4, 5];
 
-function logAllPairsOfArray(array){
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      console.log(array[i], array[j]);
-    }
-  }
-}
+// function logAllPairsOfArray(array){
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       console.log(array[i], array[j]);
+//     }
+//   }
+// }
 
-logAllPairsOfArray(boxes);
+// logAllPairsOfArray(boxes);
+
+
+//Rule 4: Drop all non - dominants 
+// function printAllNumbersThenAllPairSums(numbers){
+
+//   console.log('these are the numbers: ');
+//   numbers.forEach(function(number){
+//     console.log(number);
+//   });
+
+//   console.log('and each of these are their sums: ');
+//   numbers.forEach(function(firstNumber){
+//     numbers.forEach(function(secondNumber){
+//       console.log(firstNumber + secondNumber);
+//     });
+//   });
+// }
+
+// printAllNumbersThenAllPairSums([1,2,3,4,5]);
+
+// O(n^2)
