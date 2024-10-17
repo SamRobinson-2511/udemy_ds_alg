@@ -38,24 +38,24 @@
 
 
 //classical inheritance - deprecated
-const Player = function(name, type){
-  this.name = name;
-  this.type = type;
-}
+// const Player = function(name, type){
+//   this.name = name;
+//   this.type = type;
+// }
 
-Player.prototype.introduce = function(){
-  console.log(`Hi I am ${this.name}, I'm a ${this.type}`);
-}
+// Player.prototype.introduce = function(){
+//   console.log(`Hi I am ${this.name}, I'm a ${this.type}`);
+// }
 
-const wizard1 = new Player("Shelly", "Healer");
-const wizard2 = new Player("Shawn", "dark magic");
+// const wizard1 = new Player("Shelly", "Healer");
+// const wizard2 = new Player("Shawn", "dark magic");
 
-wizard1.play = function(){
-  console.log(`Weeeee I'm a ${this.type}`);
-}
+// wizard1.play = function(){
+//   console.log(`Weeeee I'm a ${this.type}`);
+// }
 
-wizard2.play = function(){
-  console.log(`Weeeee I'm a ${this.type}`);
-}
+// wizard2.play = function(){
+//   console.log(`Weeeee I'm a ${this.type}`);
+// }
 
 
