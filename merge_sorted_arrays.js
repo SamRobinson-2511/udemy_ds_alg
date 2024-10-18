@@ -17,11 +17,11 @@ function mergeSortedArrays(arr1, arr2){
     console.log(array1Item, array2Item)
     if (!array2Item < array2Item) {
       mergedArray.push(array1Item);
-      array1Item = array1[i];
+      array1Item = arr1[i];
       i++;
     } else {
       mergedArray.push(array2Item);
-      array2Item = array2[j];
+      array2Item = arr2[j];
     }
 
 
