@@ -33,7 +33,7 @@ class HashTable{
     let address = this._hash(key);
     if(!this.data[address]){
       this.data[address] = [];
-      console.log(this.data);
+      // console.log(this.data);
     } 
     this.data[address].push([key, value]);
     return this.data;
@@ -52,12 +52,27 @@ class HashTable{
     }
     return undefined;
   }
+
+  keys(){
+    const keysArray = [];
+    for (let i = 0; i < this.data.length; i++){
+      if(this.data[i]){
+        keysArray.push(this.data[i][0][0]);
+      }
+    }
+    return keysArray;
+  }
 }
 
 const myHashTable = new HashTable(50);
 myHashTable.set('apples', 54); //bucket
-myHashTable.set('grapes', 10000);
+myHashTable.set('grapes', 10000); 
+myHashTable.set('oranges', 20); 
 myHashTable.get('apples');
-// myHashTable._hash('grapes'); //private property 
+console.log(myHashTable.keys());
 
-// console.log('test');
+
+
+
+
+
