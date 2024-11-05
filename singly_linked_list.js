@@ -126,6 +126,13 @@ class LinkedList {
     }
     return currentNode;
   }
+  remove(index) {
+    const leader = this.traverseToIndex(index-1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+  }
 }
 
 
@@ -138,6 +145,7 @@ console.log(myLinkedList.append(5));
 console.log(myLinkedList.append(16));
 console.log(myLinkedList.prepend(1));
 console.log(myLinkedList.insert(2, 99));
+console.log(myLinkedList.remove(4));
 
 
 
